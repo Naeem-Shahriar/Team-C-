@@ -1,0 +1,87 @@
+:root {
+   margin: 0;
+  }
+  /* Navigation Style */
+  .navbar {
+    background-color: #EAF7FE;
+    }
+.navbar-brand{
+  color: #13B22C;
+  font-size: xx-large;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+nav .nav-link {
+  color: #13B22C;
+  margin-left: 10px;
+  font-weight: 600;
+}
+nav .nav-link:hover {
+ 
+  color:#0d6efd; ;
+  margin-left: 10px;
+}
+.navbar-toggler-icon {
+    background-image: none; /* Remove the default Bootstrap icon */
+    border: none;
+    background-color: #13B22C; /* Set your desired color */
+    width: 30px;
+    height: 3px;
+    display: block;
+    position: relative;
+}
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+    content: '';
+    background-color: #13B22C; /* Set the color of the lines */
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s;
+}
+
+.navbar-toggler-icon::before {
+    top: -8px;
+}
+
+.navbar-toggler-icon::after {
+    top: 8px;
+}
+
+.navbar-toggler {
+    padding: 10px;
+}
+/* navigation ends */
+
+/* Carousel started */
+main{
+  padding-top: 90px;"
+}
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 1rem;
+  z-index: 10;
+  color: #ffffff ;
+  
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 39rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 39rem;
+}
+
+.carousel-caption .btn-primary{
+  background-color: #13B22C;
+  border-color: white;
+}
+/* carousel ends */
