@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="resources/logo/logo.svg" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-
   </head>
 <body>
   <!-- Navigation part started -->
@@ -22,7 +20,7 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2" style="margin-left: 45px;font-size: larger;">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">About us</a>
@@ -47,7 +45,7 @@
           </li>
         </ul>
         <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search your location" aria-label="Search">
+          <input class="form-control me-2" type="search" placeholder="Search your location" aria-label="Search" s>
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
       </div>
@@ -58,7 +56,7 @@
   <!-- Hero part Carousel -->
   <main>
 
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" ></button>
@@ -66,26 +64,106 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="resources/cover/cover1.png" class="d-block h-900" alt="...">
+          <img src="resources/cover/cover1.jpg" class="d-block h-900" alt="...">
+          <div class="carousel-caption d-flex flex-column align-items-center">
+            <h1 class="display-4 typing-animation">Find Your Best Property</h1>
+            <form class="search-form d-flex justify-content-center align-items-center">
+                <select class="form-select me-2" aria-label="Location">
+                    <option selected>Location</option>
+                    <option value="1">New York</option>
+                    <option value="2">Los Angeles</option>
+                    <option value="3">Chicago</option>
+                </select>
+                <select class="form-select me-2" aria-label="Property Type">
+                    <option selected>Property Type</option>
+                    <option value="1">Apartment</option>
+                    <option value="2">House</option>
+                    <option value="3">Condo</option>
+                </select>
+                <select class="form-select me-2" aria-label="Price Range">
+                    <option selected>Price ($)</option>
+                    <option value="1">20k - 50k</option>
+                    <option value="2">50k - 100k</option>
+                    <option value="3">100k - 200k</option>
+                </select>
+                <select class="form-select me-2" aria-label="Bedrooms">
+                    <option selected>Bedrooms</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3+</option>
+                </select>
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
         </div>
         <div class="carousel-item">
-          <img src="resources/cover/cover2.png" class="d-block h-900" alt="...">
+          <img src="resources/cover/cover2.jpg" class="d-block h-900" alt="...">
           <div class="container">
-            <div class="carousel-caption">
-              <h1>Plan With Our Experts</h1>
-              <p>We have an amazing group of advisors to give you the perfect home.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-            </div>
+            <div class="carousel-caption d-flex flex-column align-items-center">
+              <h1 class="display-4 typing-animation">Priced to Sell Fast</h1>
+              <form class="search-form d-flex justify-content-center align-items-center">
+                  <select class="form-select me-2" aria-label="Location">
+                      <option selected>Location</option>
+                      <option value="1">New York</option>
+                      <option value="2">Los Angeles</option>
+                      <option value="3">Chicago</option>
+                  </select>
+                  <select class="form-select me-2" aria-label="Property Type">
+                      <option selected>Property Type</option>
+                      <option value="1">Apartment</option>
+                      <option value="2">House</option>
+                      <option value="3">Condo</option>
+                  </select>
+                  <select class="form-select me-2" aria-label="Price Range">
+                      <option selected>Price ($)</option>
+                      <option value="1">20k - 50k</option>
+                      <option value="2">50k - 100k</option>
+                      <option value="3">100k - 200k</option>
+                  </select>
+                  <select class="form-select me-2" aria-label="Bedrooms">
+                      <option selected>Bedrooms</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3+</option>
+                  </select>
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+          </div>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="resources/cover/cover3.png" class="d-block h-900" alt="...">
+          <img src="resources/cover/cover3.jpg" class="d-block h-900" alt="...">
           <div class="container">
-            <div class="carousel-caption">
-              <h1>Start Your Dream With Us</h1>
-              <p></p>
-              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-            </div>
+            <div class="carousel-caption d-flex flex-column align-items-center">
+              <h1 class="display-4 typing-animation">Turning Houses into Homes- We’re Here to Help</h1>
+              <form class="search-form d-flex justify-content-center align-items-center">
+                  <select class="form-select me-2" aria-label="Location">
+                      <option selected>Location</option>
+                      <option value="1">New York</option>
+                      <option value="2">Los Angeles</option>
+                      <option value="3">Chicago</option>
+                  </select>
+                  <select class="form-select me-2" aria-label="Property Type">
+                      <option selected>Property Type</option>
+                      <option value="1">Apartment</option>
+                      <option value="2">House</option>
+                      <option value="3">Condo</option>
+                  </select>
+                  <select class="form-select me-2" aria-label="Price Range">
+                      <option selected>Price ($)</option>
+                      <option value="1">20k - 50k</option>
+                      <option value="2">50k - 100k</option>
+                      <option value="3">100k - 200k</option>
+                  </select>
+                  <select class="form-select me-2" aria-label="Bedrooms">
+                      <option selected>Bedrooms</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3+</option>
+                  </select>
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+          </div>
           </div>
         </div>
       </div>

@@ -1,29 +1,50 @@
 :root {
    margin: 0;
+   
   }
   /* Navigation Style */
   .navbar {
-    background-color: #EAF7FE;
+    background-color: #52B2E5;
     }
 .navbar-brand{
-  color: #13B22C;
+  color: #f1f6f1;
   font-size: xx-large;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.navbar-brand:hover{
+  color: #ee6c4d;
 }
 nav .nav-link {
-  color: #13B22C;
+  color: #f7fcf7;
   margin-left: 10px;
   font-weight: 600;
+  border-bottom: 3px solid transparent;
+}
+
+ .nav-item a.active{
+  border-bottom: 3px solid #ee6c4d;
 }
 nav .nav-link:hover {
- 
-  color:#0d6efd; ;
+  color:#ee6c4d; 
   margin-left: 10px;
+  border-bottom: 3px solid #ee6c4d;
 }
+.form-control:hover {
+border-color: #ee6c4d;
+}
+  .btn-outline-success{
+  color: #ffffff;
+  border-color: #f1f6f1;
+ }
+ .btn-outline-success:hover{
+background-color:#ee6c4d;
+border-color: white;
+ }
+
 .navbar-toggler-icon {
     background-image: none; /* Remove the default Bootstrap icon */
     border: none;
-    background-color: #13B22C; /* Set your desired color */
+    background-color:#f9f8f8; /* Set your desired color */
     width: 30px;
     height: 3px;
     display: block;
@@ -32,12 +53,13 @@ nav .nav-link:hover {
 .navbar-toggler-icon::before,
 .navbar-toggler-icon::after {
     content: '';
-    background-color: #13B22C; /* Set the color of the lines */
+    background-color:#ffffff; /* Set the color of the lines */
     width: 30px;
     height: 3px;
     position: absolute;
     left: 0;
     transition: all 0.3s;
+    
 }
 
 .navbar-toggler-icon::before {
@@ -55,20 +77,11 @@ nav .nav-link:hover {
 
 /* Carousel started */
 main{
-  padding-top: 90px;"
+  padding-top: 90px;
 }
 .carousel {
   margin-bottom: 4rem;
 }
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 1rem;
-  z-index: 10;
-  color: #ffffff ;
-  
-}
-
-/* Declare heights because of positioning of img element */
 .carousel-item {
   height: 39rem;
 }
@@ -78,10 +91,87 @@ main{
   left: 0;
   min-width: 100%;
   height: 39rem;
+  /* opacity: 0.9; */
+}
+.carousel-item > img:hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 39rem;
+  opacity: 1;
 }
 
-.carousel-caption .btn-primary{
-  background-color: #13B22C;
-  border-color: white;
-}
 /* carousel ends */
+/* Carousel Caption */
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color:#f45933;
+}
+
+.typing-animation {
+  font-size: 3rem;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: .15em solid #ee6c4d;
+  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color:#ee6c4d; }
+}
+
+/* Search Form */
+.search-form {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.search-form .form-select {
+  width: 150px;
+}
+
+.search-form button {
+  background-color: #ee6c4d;
+  border: none;
+  padding: 10px 20px;
+}
+.search-form button:hover{
+  background-color: #ffffff;
+  color:#ee6c4d;
+  border: none;
+  padding: 10px 20px;
+}
+.search-form button i {
+  color: #fff;
+}
+
+.search-form select, .search-form button {
+  font-size: 1.3rem;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .typing-animation {
+      font-size: 2rem;
+  }
+  .search-form {
+      flex-direction: column;
+  }
+  .search-form .form-select, .search-form button {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+}
