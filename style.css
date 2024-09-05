@@ -310,20 +310,14 @@ main{
     margin-right: auto;
   }
 }
-
+/* Media Query for 768px and below */
 @media (max-width: 320px) {
+  
   .headline {
-      font-size: 2rem;
-      margin-top: -320px;
+      font-size: 3rem;
+      margin-top: -420px;
       text-align: center;
   }
-  .about-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: start; 
-  }
-  
-
   .description {
       font-size: 1rem;
   }
