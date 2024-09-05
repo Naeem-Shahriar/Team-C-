@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Design</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #111;
+            color: #fff;
+        }
+
+        .products-section {
+            padding: 50px;
+            background-image: url(resources/cover/cover2.jpg); /* Add the path to your background image */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .diamond-shape {
+            position: relative;
+            width: 250px;
+            height: 250px;
+            background-color: #2d3e50;
+            transform: rotate(-45deg);
+            margin-left: -125px; /* Half of the diamond width to center it */
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #ff6f61;
+        }
+
+        .diamond-shape h2, .diamond-shape p {
+            transform: rotate(45deg);
+            color: #fff;
+            text-align: center;
+            margin: 0;
+        }
+
+        .diamond-shape h2 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .diamond-shape p {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .card {
+            background-color: #fff;
+            color: #000;
+            border: none;
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        .card-text {
+            font-size: 14px;
+            color: #6c757d;
+        }
+
+        .card-price {
+            font-size: 18px;
+            color: #ff6f61;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .btn-custom {
+            background-color: #ff6f61;
+            color: #fff;
+            border: none;
+            font-size: 14px;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            filter: invert(100%);
+        }
+
+        .view-products {
+            text-align: right;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .view-products a {
+            color: #fff;
+            text-decoration: underline;
+        }
+        .parallax {
+    background-image: url(resources/bg/bg1.jpg); /* Add the path to your background image */
+    background-attachment: fixed; /* Key for the parallax effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh; /* Adjust based on your design */
+    position: relative;
+    z-index: 1;
+}
+
+.parallax::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent overlay to darken the background */
+    z-index: -1;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <section class="products-section parallax">
+        <div class="container">
+            <div class="row"> 
+                <div class="col-lg-12">
+                    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <img src="resources/cover/cover1.jpg" class="card-img-top" alt="Product 1"> <!-- Add the image path -->
+                                            <div class="card-body">
+                                                <h5 class="card-title">Appartments</h5>
+                                                <p class="card-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                <p class="card-price">1M</p>
+                                                <a href="#" class="btn btn-custom">Explore</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  
+                                        <div class="col-md-4">
+                                            <div class="card">
+                                                <img src="resources/cover/cover1.jpg" class="card-img-top" alt="Product 1"> <!-- Add the image path -->
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Appartments</h5>
+                                                    <p class="card-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                    <p class="card-price">1M</p>
+                                                    <a href="#" class="btn btn-custom">Explore</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+                                            <div class="col-md-4">
+                                                <div class="card">
+                                                    <img src="resources/cover/cover1.jpg" class="card-img-top" alt="Product 1"> <!-- Add the image path -->
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Appartments</h5>
+                                                        <p class="card-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                        <p class="card-price">1M</p>
+                                                        <a href="#" class="btn btn-custom">Explore</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                
+                            <!-- Add more carousel items here if needed -->
+                        </div>
+                    </div>
+                    <div class="view-products">
+                        <a href="#">View all products</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -9,7 +9,7 @@
 .navbar-brand{
   color: #f1f6f1;
   font-size: xx-large;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .navbar-brand:hover{
   color: #ee6c4d;
@@ -37,8 +37,8 @@ border-color: #ee6c4d;
   border-color: #f1f6f1;
  }
  .btn-outline-success:hover{
-background-color:#ee6c4d;
-border-color: white;
+  background-color:#ee6c4d;
+  border-color: white;
  }
 
 .navbar-toggler-icon {
@@ -79,9 +79,10 @@ border-color: white;
 main{
   padding-top: 90px;
 }
-.carousel {
-  margin-bottom: 4rem;
-}
+/* .carousel {
+  /* margin-bottom: 4rem; */
+
+} */
 .carousel-item {
   height: 39rem;
 }
@@ -136,7 +137,7 @@ main{
 .search-form {
   margin-top: 20px;
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
 }
 
 .search-form .form-select {
@@ -157,13 +158,12 @@ main{
 .search-form button i {
   color: #fff;
 }
-
-.search-form select, .search-form button {
-  font-size: 1.3rem;
-  border-radius: 5px;
+.search-form select, .search-form  {
+  font-size: 1.2rem;
+  border-radius: 10px;
 }
-
-@media (max-width: 768px) {
+/* responsive for text  */
+  @media(max-width: 768px) {
   .typing-animation {
       font-size: 2rem;
   }
@@ -173,5 +173,174 @@ main{
   .search-form .form-select, .search-form button {
       width: 100%;
       margin-bottom: 10px;
+  }
+}
+
+/* about us */
+
+/* About Us Section */
+#about-us {
+  padding: 0 0;
+  position: relative;
+  background-color: #f8f9fa;
+  overflow: hidden;
+}
+
+
+.about-img-container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.about-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.about-img:hover {
+  transform: scale(1.1); /* Zoom in on hover */
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headline {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #343a40;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  
+}
+.description {
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.5s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.btn-about {
+  background-color: #52B2E5;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease-in-out;
+  width: 200px;
+}
+
+.btn-about:hover {
+  background-color: #ee6c4d;
+  color: white;
+}
+
+/* Responsive Design mixed sections*/
+/* Media Query for 1024px and below */
+@media (max-width: 1024px) {
+  /* Adjust the navbar padding */
+  .navbar {
+    padding: 1rem 1rem;
+  }
+
+  /* Hide the search form */
+  .navbar .form-control,
+  .navbar .btn-outline-success {
+    display: none;
+  }
+
+  /* Adjust the brand image size for better mobile view */
+  .navbar-brand img {
+    height: 50px;
+    width: 35px;
+  }
+
+  /* Align navbar items centrally */
+  .navbar-nav {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* Make navbar items take up more space */
+  .navbar-nav .nav-item {
+    margin: 0.5rem 0;
+  }
+
+  /* Reduce the font size for smaller screens */
+  .navbar-nav .nav-link {
+    font-size: medium;
+  }
+}
+
+/* Media Query for 768px and below */
+@media (max-width: 768px) {
+  /* Collapse the navbar by default */
+  .navbar-collapse {
+    justify-content: center;
+  }
+
+  /* Adjust padding and font size */
+  .navbar-nav .nav-link {
+    font-size: small;
+  }
+
+  /* Center the brand logo */
+  .navbar-brand {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  /* Center the collapse button */
+  .navbar-toggler {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .headline {
+      font-size: 2rem;
+      margin-top: -200px;
+      text-align: center;
+    
+  }
+
+  .description {
+      font-size: 1rem;
+  }
+
+  .btn-about {
+      width: 50%;
+  }
+}
+@media (max-width: 400px) {
+  .headline {
+      font-size: 2rem;
+      margin-top: -400px;
+      text-align: center;
+    
+  }
+
+  .description {
+      font-size: 1rem;
+  }
+
+  .btn-about {
+      width: 50%;
   }
 }
