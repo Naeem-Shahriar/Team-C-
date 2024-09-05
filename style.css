@@ -314,7 +314,7 @@ main{
 @media (max-width: 320px) {
   .headline {
       font-size: 2rem;
-      margin-top: -300px;
+      margin-top: -320px;
       text-align: center;
   }
   .about-text {
