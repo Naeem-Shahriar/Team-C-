@@ -79,10 +79,9 @@ border-color: #ee6c4d;
 main{
   padding-top: 90px;
 }
-.carousel {
-  /* margin-bottom: 4rem; */
-
-}
+/* .carousel {
+   margin-bottom: 4rem; 
+} */
 .carousel-item {
   height: 39rem;
 }
@@ -327,15 +326,6 @@ main{
   .btn-about {
       width: 50%;
   }
-}
-@media (max-width: 400px) {
-  .headline {
-      font-size: 2rem;
-      margin-top: -400px;
-      text-align: center;
-    
-  }
-
   .description {
       font-size: 1rem;
   }
