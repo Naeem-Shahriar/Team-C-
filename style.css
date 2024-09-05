@@ -206,7 +206,7 @@ main{
 .about-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; 
 }
 
 .headline {
@@ -311,13 +311,18 @@ main{
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 320px) {
   .headline {
       font-size: 2rem;
-      margin-top: -200px;
+      margin-top: -300px;
       text-align: center;
-    
   }
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start; 
+  }
+  
 
   .description {
       font-size: 1rem;
@@ -332,5 +337,6 @@ main{
 
   .btn-about {
       width: 50%;
+      
   }
 }
