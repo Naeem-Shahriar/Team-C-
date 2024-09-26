@@ -2,6 +2,10 @@
    margin: 0;
    
   }
+ .gettime{
+  text-align: center;
+ }
+
   /* Navigation Style */
 .navbar {
     background-color: #52B2E5;
